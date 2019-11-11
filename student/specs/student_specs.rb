@@ -4,7 +4,7 @@ require_relative('../student.rb')
 class StudentTest < MiniTest::Test
 
   def test_create_new_student
-    student =  Student.new()
+    student =  Student.new('Quentin', 'G16')
   end
 
 
