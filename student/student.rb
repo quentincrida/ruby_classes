@@ -21,5 +21,9 @@ class Student
    def set_cohort(cohort)
      @cohort_name = cohort
    end
+
+   def student_can_talk
+     return "I can talk"
+   end
 #
 end
