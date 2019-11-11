@@ -1,4 +1,4 @@
-require ('minitest/autorun')
+require('minitest/autorun')
 require_relative('../student.rb')
 
 class StudentTest < MiniTest::Test
@@ -31,8 +31,14 @@ class StudentTest < MiniTest::Test
 
   def test_student_can_talk
     student = Student.new('Quentin', 'G16')
-    #student.student_name
     assert_equal("I can talk", student.student_can_talk)
   end
+
+  def test_favourite_language
+    student = Student.new('Quentin', 'G16')
+    result = student.favourite_language('Ruby')
+    assert_equal('I love Ruby', result)
+  end
+
 #
 end
