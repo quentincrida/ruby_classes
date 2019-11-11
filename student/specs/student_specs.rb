@@ -17,5 +17,16 @@ class StudentTest < MiniTest::Test
     assert_equal('G16', student.get_cohort)
   end
 
+  def test_set_name
+    student = Student.new('Quentin', 'G16')
+    student.set_name('Robert')
+    assert_equal('Robert', student.get_name)
+  end
+
+  def test_set_cohort
+    student = Student.new('Quentin', 'G16')
+    student.set_cohort('Amazon')
+    assert_equal('Amazon', student.get_cohort)
+  end
 #
 end
